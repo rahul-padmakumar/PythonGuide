@@ -1,15 +1,9 @@
 
 def lesser_of_two_evens(a, b):
     if a % 2 == 0 and b % 2 == 0:
-        if a < b:
-            return a
-        else:
-            return b
+        return min(a, b)
     else:
-        if a > b:
-            return a
-        else:
-            return b
+        return max(a, b)
 
 
 print(lesser_of_two_evens(2, 4))

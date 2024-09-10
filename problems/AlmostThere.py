@@ -1,9 +1,6 @@
 
 def almost_there(number):
-    if abs(number - 100) <= 10 or abs(number - 200) <= 10:
-        return True
-    else:
-        return False
+    return abs(number - 100) <= 10 or abs(number - 200) <= 10
 
 
 print(almost_there(94))

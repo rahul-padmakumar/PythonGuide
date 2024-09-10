@@ -1,14 +1,9 @@
 
 def mac_donald(name):
-    if len(name) == 0:
-        return ''
-    altered_name = name[0].upper()
-    if len(name) >= 4:
-        altered_name = altered_name + name[1:3] + name[3].upper()
-        if len(name) > 4:
-            altered_name = altered_name + name[4:]
+    if len(name) > 3:
+        altered_name = name[:3].capitalize() + name[3:].capitalize()
     else:
-        altered_name = altered_name + name[1:]
+        altered_name = name.capitalize()
     return altered_name
 
 
