@@ -1,10 +1,9 @@
-
 def ask():
     while True:
         number = input("Please enter a number: ")
         try:
             square = int(number) ** 2
-        except:
+        except ValueError:
             print('An error occurred! Please try again!')
             continue
         else:
