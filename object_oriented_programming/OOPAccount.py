@@ -18,7 +18,7 @@ class Account:
             print("Current balance: ${}".format(self.balance))
 
     def __str__(self):
-        return f"Account owner:  {self.owner}\nAccount balance: ${str(self.balance)}"
+        return "Account owner:  {}\nAccount balance: ${}".format(self.owner, self.balance)
 
 
 acc1 = Account("Jose", 100)
