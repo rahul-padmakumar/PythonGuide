@@ -7,6 +7,7 @@ print(math.ceil(v1))
 print(math.floor(v1))
 print(round(v1))
 print(round(5.5))
+print(round(4.567, 2))
 
 print(math.e)
 
