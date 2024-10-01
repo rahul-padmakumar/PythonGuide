@@ -25,3 +25,14 @@ print(dict1.pop('key1'))
 print(dict1)
 dict1.clear()
 print(dict1)
+
+# dictionary comprehension
+dict2 = {x: x**2 for x in range(10)}
+print(dict2)
+
+# dict keys, values, items are dictionary view object. They are not separate list but tied to original dictionary
+keys = dict2.keys()
+print(keys)
+
+dict2[10] = 100
+print(keys)
