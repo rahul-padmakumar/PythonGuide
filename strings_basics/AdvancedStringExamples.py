@@ -37,4 +37,3 @@ print("Hello World".endswith('d'))
 
 print("Hello world".split(' '))
 print("Hello world".partition(' '))
-
