@@ -1,4 +1,4 @@
-# list is a mutable ordered sequence of elements
+# list is a mutable-ordered sequence of elements
 
 list1 = [2, 3, 4, 5, 6, 7]
 print(list1)
@@ -72,6 +72,8 @@ print(list1)
 list4 = [4, 3, 5, 10, 1, 6]
 list4.sort()
 print(list4)
+list4.sort(reverse=True)
+print(list4)
 stringList = ["Jan", "Feb", "Mar", "Apr"]
 print(stringList.sort())
 print(stringList)
@@ -91,5 +93,21 @@ print(list5[1][2])
 firstCol = [row[0] for row in list5]
 print(firstCol)
 
+# count
+print(firstCol.count(4))
+print(firstCol.count(9))
 
+# extend
+list6 = [1, 2, 3]
+list7 = [4, 5, 6]
+list6.extend(list7)
+print(list6)
+list6.append(list7)
+print(list6)
 
+# index
+print(list6.index(5))
+
+# insert
+list6.insert(4, 10)
+print(list6)
