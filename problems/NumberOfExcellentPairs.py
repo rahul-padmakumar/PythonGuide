@@ -15,7 +15,7 @@ class Solution:
         print(bitcount_list)
         n = len(bitcount_list)
         for i in range(n):
-            diff = abs(k - bitcount_list[i])
+            diff = (k - bitcount_list[i])
             left, right = 0, n
             while left < right:
                 mid = (left + right) // 2
