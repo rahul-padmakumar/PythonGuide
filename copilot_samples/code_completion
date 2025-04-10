@@ -1,0 +1,50 @@
+import random
+
+class Employee:
+
+    """A class representing an employee with a first name, salary, and address."""
+
+    def __init__(self, first_name, salary, address):
+        self.first_name = first_name
+        self.salary = salary
+        self.address = address
+
+    def __repr__(self):
+        return f"Employee(first_name='{self.first_name}', salary={self.salary}, address='{self.address}')"
+
+def generate_random_employees(count=5):
+
+    """Generate a list of random Employee objects.
+    Args:
+        count (int): The number of Employee objects to generate.
+    Returns:
+        list: A list of Employee objects with random attributes.
+    """
+
+    first_names = ['John', 'Jane', 'Alice', 'Bob', 'Charlie']
+    addresses = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix']
+    employees = []
+
+    for _ in range(count):
+        first_name = random.choice(first_names)
+        salary = random.randint(30000, 100000)
+        address = random.choice(addresses)
+        employees.append(Employee(first_name, salary, address))
+
+    return employees
+
+def max_salary_employee(employees):
+
+    """Find the employee with the maximum salary.
+    Args:
+        employees (list): A list of Employee objects.
+    Returns:
+        Employee: The employee with the maximum salary.
+    """
+
+    print(employees)
+
+    max_salary_emp = max(employees, key=lambda emp: emp.salary)
+    return max_salary_emp
+
+print(max_salary_employee(generate_random_employees()))

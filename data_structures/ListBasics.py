@@ -1,5 +1,9 @@
 # list is a mutable-ordered sequence of elements
 
+empty = list()
+print(empty)
+
+
 list1 = [2, 3, 4, 5, 6, 7]
 print(list1)
 
@@ -21,6 +25,7 @@ print(list1[:])
 print(list1[1:])
 print(list1[2:5])
 print(list1[:3])
+print("hi")
 print(list1[::2])
 print(list1[1:6:2])
 print(list1[:4:2])
@@ -36,6 +41,7 @@ print(list1)
 print(new_list)
 
 # concatenation creates a new list
+print("COncat")
 list2 = [9, 10, 11]
 concatList = list1 + list2
 print(concatList)
